@@ -19,3 +19,20 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct Home: View {
+    var body: some View {
+        VStack(spacing: 0) {
+            HStack {
+                Button(action: {
+                    
+                }, label: {
+                    Image("Grid")
+                        .resizable()
+                        .renderingMode(.original)
+                        .frame(width: 25, height: 23)
+                })
+            }
+        }
+    }
+}
