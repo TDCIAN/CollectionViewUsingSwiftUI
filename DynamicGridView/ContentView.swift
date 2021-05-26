@@ -109,13 +109,14 @@ struct Card: View {
             }, label: {
                 Text("Play Now")
                     .foregroundColor(.white)
-                    .frame(width: (UIScreen.main.bounds.width))
+                    .frame(width: (UIScreen.main.bounds.width - 70) / 2)
                     .padding(.vertical, 10)
             })
             .background(Color.red)
             .cornerRadius(10)
             .shadow(radius: 6)
         }
+        .border(Color.yellow, width: 2)
     }
 }
 
